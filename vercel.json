@@ -1,0 +1,15 @@
+{
+  "functions": {
+    "api/*": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    { "source": "/", "destination": "/api" },
+    { "source": "/totalcoins", "destination": "/api/totalcoins.ts" },
+    { "source": "/circulating", "destination": "/api/circulating.ts" },
+    { "source": "/favicon.ico", "destination": "/api/favicon.ts" },
+    { "source": "/(.*)", "destination": "/api/404.ts" }
+  ]
+}

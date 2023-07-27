@@ -1,0 +1,21 @@
+{
+  "name": "gmcoinapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./api/index.ts",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/node": "^2.15.6",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "@types/node-cache": "^4.2.5"
+  }
+}
