@@ -15,7 +15,8 @@ export default async function circulatingsupply(
 
     for (let key in address) {
       let tokens = await getBalance(address[key], tokenID);
-      console.log(tokens);
+      //console.log(tokens);
+      alert(tokens);
       removableTokens.push(tokens);
     }
 
