@@ -9,6 +9,7 @@ export default async function getBalance(
     );
 
     if (!response.ok) {
+       console.log(response);
       return 0;
     }
     const response_data = await response.json();
