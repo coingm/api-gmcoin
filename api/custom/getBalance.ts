@@ -15,7 +15,7 @@ export default async function getBalance(
     const tokenList = response_data?.tokenBalances;
 
     const foundTokenObj = tokenList.find(
-      (o) => o["tokenId"] === tokenID.toString();
+      (o) => o["tokenId"] === tokenID.toString()
     );
 
     //console.log(foundTokenObj);
