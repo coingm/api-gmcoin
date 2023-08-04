@@ -25,10 +25,10 @@ export default async function circulatingsupply(
 
     const tcoins = await totalsupply(tokenID);
 
-    console.log(tcoins);
-    console.log(sum);
-    console.log(removableTokens);
-    console.log(tcoins - sum);
+    //console.log(tcoins);
+    //console.log(sum);
+    //console.log(removableTokens);
+    //console.log(tcoins - sum);
 
     if (tcoins == null) {
       return null;
