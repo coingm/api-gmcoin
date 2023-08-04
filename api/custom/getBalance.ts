@@ -18,9 +18,9 @@ export default async function getBalance(
       (o) => o["tokenId"] === tokenID.toString()
     );
 
-    //console.log(foundTokenObj);
+    console.log(foundTokenObj);
     const parseFoundToken = +foundTokenObj?.balance;
-    //console.log(parseFoundToken);
+    console.log(parseFoundToken);
     const parseFoundTokenF = parseFoundToken / 10 ** 2;
     //const getTotalcoinsF = await totalsupply(tokenID);
     // if (getTotalcoinsF == null) {
