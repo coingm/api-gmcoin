@@ -17,6 +17,7 @@ export default async function circulatingsupply(
       let tokens = await getBalance(address[key], tokenID);
       console.log(tokens);
       removableTokens.push(tokens);
+      await new Promise(f => setTimeout(f, 1000));
     }
 
     for (let i = 0; i < removableTokens.length; i++) {
